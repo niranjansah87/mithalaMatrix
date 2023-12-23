@@ -1,5 +1,5 @@
 {
-  "name": "mithalaMatrix",
+  "name": "mithala-Matrix",
   "version": "0.1.0",
   "description": "CLI for mithalaMatrix",
   "source": "src/index.ts",
@@ -30,7 +30,7 @@
     {
       "name": "Niranjan sah",
       "url": "https://github.com/niranjansah87"
-    },
+    }
    
   ],
   "license": "MIT",
