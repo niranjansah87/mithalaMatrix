@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode } from "bhai-lang-parser";
+import { ASTNode } from "Mithala-Matrix-interpreter";
 
 import InterpreterModule from "../../module/interpreterModule";
 import Scope from "../scope";

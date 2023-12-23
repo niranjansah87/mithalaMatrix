@@ -1,6 +1,7 @@
 import Scope from "../../src/components/scope";
 import InvalidStateException from "../../src/exceptions/invalidStateException";
 import InterpreterModule from "../../src/module/interpreterModule";
+import jest from 'jest';
 
 jest.mock("../../src/components/visitor/program", () => {
   return jest.fn().mockImplementation(() => ({

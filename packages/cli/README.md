@@ -1,14 +1,14 @@
 <h1 align="center">Bhai Lang</h1>
 <p align="center">
-<a href="https://lgtm.com/projects/g/DulLabs/bhai-lang/alerts/"><img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/DulLabs/bhai-lang.svg?logo=lgtm&logoWidth=18"/></a>
-<a href="https://lgtm.com/projects/g/DulLabs/bhai-lang/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/DulLabs/bhai-lang.svg?logo=lgtm&logoWidth=18"/></a>
-<a href="https://github.com/DulLabs/bhai-lang/actions/workflows/node.js.yml/badge.svg"><img alt="Build" src="https://github.com/DulLabs/bhai-lang/actions/workflows/node.js.yml/badge.svg"/></a>
+<a href="https://lgtm.com/projects/g/niranjansah87/mithalaMatrix/alerts/"><img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/niranjansah87/mithalaMatrix.svg?logo=lgtm&logoWidth=18"/></a>
+<a href="https://lgtm.com/projects/g/niranjansah87/mithalaMatrix/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/niranjansah87/mithalaMatrix.svg?logo=lgtm&logoWidth=18"/></a>
+<a href="https://github.com/niranjansah87/mithalaMatrix/actions/workflows/node.js.yml/badge.svg"><img alt="Build" src="https://github.com/niranjansah87/mithalaMatrix/actions/workflows/node.js.yml/badge.svg"/></a>
 <a href="https://bhailang.js.org/"><img alt="Build" src="https://img.shields.io/badge/website-bhailang.js.org-orange"/></a>
 <a href="https://www.npmjs.com/package/bhailang"><img alt="Build" src="https://img.shields.io/badge/npm-bhailang-orange"/></a>
   
 </p>
 <p align="center">
-  <b>Bhai lang is a toy programming language written in Typescript.</b>
+  <b>Mithala Matrix is a funny programming language written in Typescript.</b>
 </p>
 <br>
 
@@ -24,12 +24,12 @@ npm i -g bhailang
 
 
 <h4 align="left">Edit the file with a text editor.
-You can also try out your code on <a href="https://bhailang.js.org/#playground">Bhai Lang PlayGround</a></h4>
+You can also try out your code on <a href="https://bhailang.js.org/#playground">Mithala Matrix PlayGround</a></h4>
 
 ```
-hi bhai
-  bol bhai "Hello bhai";
-bye bhai
+namaste
+  dekhau "Hello bhai";
+dhanayabad
 
 ```
 
@@ -50,102 +50,102 @@ hello bhai
 <h2 align="center">Documentation</h2>
 
 <h3 align="center">General</h3>
-<p align="center"><code>hi bhai</code> is the entrypoint for the program and all program must end with <code>bye bhai</code>. Anything outside of it will be ignored.</p>
+<p align="center"><code>namaste</code> is the entrypoint for the program and all program must end with <code>dhanayabad</code>. Anything outside of it will be ignored.</p>
 
 ```
 
 This will be ignored
 
-hi bhai
+namaste
 // Write code here
-bye bhai
+dhanayabad
 
 This too
 ```
 
 <h3 align="center">Variables</h3>
-<p align="center">Variables can be declared using <code>bhai ye hai</code>.</p>
+<p align="center">Variables can be declared using <code>mannus</code>.</p>
 
 ```
 
-hi bhai
-  bhai ye hai a = 10;
-  bhai ye hai b = "two";
-  bhai ye hai c = 15;
+namaste
+  mannus a = 10;
+  mannus b = "two";
+  mannus c = 15;
   a = a + 1;
   b = 21;
   c *= 2;
-bye bhai
+dhanayabad
 ```
 
 <h3 align="center">Types</h3>
-<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>nalla. sahi and galat</code> are the boolean values.</p>
+<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>akshar. ramro and naramro</code> are the boolean values.</p>
 
 ```
 
-hi bhai
-  bhai ye hai a = 10;
-  bhai ye hai b = 10 + (15*20);
-  bhai ye hai c = "two";
-  bhai ye hai d = 'ok';
-  bhai ye hai e = nalla;
-  bhai ye hai f = sahi;
-  bhai ye hai g = galat;
-bye bhai
+namaste
+  mannus a = 10;
+  mannus b = 10 + (15*20);
+  mannus c = "two";
+  mannus d = 'ok';
+  mannus e = akshar;
+  mannus f = ramro;
+  mannus g = naramro;
+dhanayabad
 ```
 
 <h3 align="center">Built-ins</h3>
-<p align="center">Use <code>bol bhai</code> to print anything to console.</p>
+<p align="center">Use <code>dekhau</code> to print anything to console.</p>
 
 ```
 
-hi bhai
-  bol bhai "Hello World";
-  bhai ye hai a = 10;
+namaste
+  dekhau "Hello World";
+  mannus a = 10;
   {
-    bhai ye hai b = 20;
-    bol bhai a + b;
+    mannus b = 20;
+    dekhau a + b;
   }
-  bol bhai 5, 'ok', nalla , sahi , galat;
-bye bhai
+  dekhau 5, 'ok', akshar , ramro , naramro;
+dhanayabad
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">Bhailang supports simple if else construct , <code>agar bhai</code> block will execute if condition is <code>sahi</code> and <code>warna bhai</code> block will execute if condition is <code>galat</code>.</p>
+<p align="center">Bhailang supports simple if else construct , <code>yadi</code> block will execute if condition is <code>ramro</code> and <code>natra</code> block will execute if condition is <code>naramro</code>.</p>
 
 ```
 
-hi bhai
-  bhai ye hai a = 10;
-  agar bhai (a < 25) {
-   bol bhai "a is less than 25";
-  } warna bhai {
-   bol bhai "a is greater than or equal to 25";
+namaste
+  mannus a = 10;
+  yadi (a < 25) {
+   dekhau "a is less than 25";
+  } natra {
+   dekhau "a is greater than or equal to 25";
   }
-bye bhai
+dhanayabad
 ```
 
 <h3 align="center">Loops</h3>
-<p align="center">Statements inside <code>jab tak bhai</code> blocks are executed as long as a specified condition evaluates to sahi. If the condition becomes <code>galat</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
+<p align="center">Statements inside <code>jaba samma</code> blocks are executed as long as a specified condition evaluates to ramro. If the condition becomes <code>naramro</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>rukha</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
 
 
 ```
 
-hi bhai
-  bhai ye hai a = 0;
-  jab tak bhai (a < 10) {
+namaste
+  mannus a = 0;
+  jaba samma (a < 10) {
    a += 1;
-   agar bhai (a == 5) {
-    bol bhai "andar se bol bhai ", a;
+   yadi (a == 5) {
+    dekhau "andar se dekhau ", a;
     agla dekh bhai;
    }
-   agar bhai (a == 6) {
-    bas kar bhai;
+   yadi (a == 6) {
+    rukha;
    }
-   bol bhai a;
+   dekhau a;
   }
-  bol bhai "done";
-bye bhai
+  dekhau "done";
+dhanayabad
 ```
 
 

@@ -1,11 +1,11 @@
 {
-  "name": "bhailang",
+  "name": "mithalaMatrix",
   "version": "0.1.0",
-  "description": "CLI for bhai-lang",
+  "description": "CLI for mithalaMatrix",
   "source": "src/index.ts",
   "main": "bin/index.js",
   "bin": {
-    "bhailang": "./bin/index.js"
+    "mithalaMatrix": "./bin/index.js"
   },
   "files": [
     "bin"
@@ -21,7 +21,7 @@
   "keywords": [
     "programming",
     "language",
-    "bhai-lang",
+    "mithalaMatrix",
     "bl",
     "javascript",
     "typescript"
@@ -48,6 +48,6 @@
     "@types/jest": "^27.4.0",
     "config": "*",
     "tsconfig": "*",
-    "bhai-lang-interpreter": "*"
+    "Mithala-Matrix-interpreter": "*"
   }
 }

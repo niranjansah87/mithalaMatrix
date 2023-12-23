@@ -1,5 +1,5 @@
 import { RuntimeException } from "../../src";
-import aksharPointerException from "../../src/exceptions/aksharPointerException";
+import NallaPointerException from "../../src/exceptions/nallaPointerException";
 
 
 export const NegativeTestCases = [
@@ -186,7 +186,7 @@ export const NegativeTestCases = [
       dekhau a + 9;
       dhanayabad;
     `,
-    exception: aksharPointerException,
+    exception: NallaPointerException,
   },
   {
     name: "interpreter use akshar variable in expression - 2, should throw an exception",
@@ -196,7 +196,7 @@ export const NegativeTestCases = [
       dekhau a + 9;
       dhanayabad;
     `,
-    exception: aksharPointerException,
+    exception: NallaPointerException,
   },
   {
     name: "interpreter use akshar in variable initialisation expression, should throw an exception",
@@ -205,7 +205,7 @@ export const NegativeTestCases = [
       mannus a = akshar + 80;
       dhanayabad;
     `,
-    exception: aksharPointerException,
+    exception: NallaPointerException,
   },
   {
     name: "interpreter use akshar in variable initialisation expression - 2, should throw an exception",
@@ -214,7 +214,7 @@ export const NegativeTestCases = [
       mannus a = akshar + "jam";
       dhanayabad;
     `,
-    exception: aksharPointerException,
+    exception: NallaPointerException,
   },
   {
     name: "interpreter use akshar variable in another variable initialisation expression, should throw an exception",
@@ -224,7 +224,7 @@ export const NegativeTestCases = [
       mannus b = a + "hello";
       dhanayabad;
     `,
-    exception: aksharPointerException,
+    exception: NallaPointerException,
   },
   {
     name: "interpreter use akshar variable in complex expression, should throw an exception",
@@ -234,7 +234,7 @@ export const NegativeTestCases = [
       mannus b = ((a*9) * a + "hello");
       dhanayabad;
     `,
-    exception: aksharPointerException,
+    exception: NallaPointerException,
   },
   // ramro - naramro case
   {
@@ -304,7 +304,7 @@ export const NegativeTestCases = [
         (akshar * (4 + 8 + 10));
         dhanayabad
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   {
     name: "complex expression test with one akshar operand and one boolean operand, should throw an exception",
@@ -322,7 +322,7 @@ export const NegativeTestCases = [
         (ramro * (akshar + 8 + 10));
         dhanayabad
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   {
     name: "complex expression test with one akshar operand and one boolean operand - 3, should throw akshar pointer exception",
@@ -331,7 +331,7 @@ export const NegativeTestCases = [
         (akshar + ramro);
         dhanayabad
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   {
     name: "complex expression test with one boolean operand, should throw an exception",
@@ -406,7 +406,7 @@ export const NegativeTestCases = [
         dekhau akshar + 5;
         dhanayabad;
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   {
     name: "complex assign test with expression containing akshar, should throw an exception",
@@ -416,7 +416,7 @@ export const NegativeTestCases = [
         a *= 5;
         dhanayabad;
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   {
     name: "complex assign test with expression containing ramro, should throw an exception",
@@ -426,7 +426,7 @@ export const NegativeTestCases = [
         a *= 5;
         dhanayabad;
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   {
     name: "complex assign test with expression containing akshar - 2, should throw an exception",
@@ -436,7 +436,7 @@ export const NegativeTestCases = [
         a /= 5;
         dhanayabad;
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   // while loop negative tests
   {
@@ -481,7 +481,7 @@ export const NegativeTestCases = [
         dekhau akshar && 90;
         dhanayabad;
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   {
     name: "use of akshar variable with &&, should throw an exception",
@@ -491,7 +491,7 @@ export const NegativeTestCases = [
         dekhau a && 90;
         dhanayabad;
       `,
-    output: aksharPointerException,
+    output: NallaPointerException,
   },
   // modulus operator test
   {
