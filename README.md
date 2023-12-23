@@ -73,7 +73,7 @@ dhanayabad
 ```
 
 <h3 align="center">Types</h3>
-<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>akshar</code>. <code>sahi</code> and <code>galat</code> are the boolean values.</p>
+<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>akshar</code>. <code>ramro</code> and <code>naramro</code> are the boolean values.</p>
 
 ```
 
@@ -83,8 +83,8 @@ namaste
   mannus c = "two";
   mannus d = 'ok';
   mannus e = akshar;
-  mannus f = sahi;
-  mannus g = galat;
+  mannus f = ramro;
+  mannus g = naramro;
 dhanayabad
 ```
 
@@ -100,12 +100,12 @@ namaste
     mannus b = 20;
     dekhau a + b;
   }
-  dekhau 5, 'ok', nalla , sahi , galat;
+  dekhau 5, 'ok', nalla , ramro , naramro;
 dhanayabad
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">Mithala Matrix supports if-else-if ladder construct , <code>yadi</code> block will execute if condition is <code>sahi</code>, otherwise one of the subsequently added <code>anayatha yadi</code> blocks will execute if their respective condition is <code>sahi</code>, and the <code>natra </code> block will eventually execute if all of the above conditions are <code>galat</code>
+<p align="center">Mithala Matrix supports if-else-if ladder construct , <code>yadi</code> block will execute if condition is <code>ramro</code>, otherwise one of the subsequently added <code>anayatha yadi</code> blocks will execute if their respective condition is <code>ramro</code>, and the <code>natra </code> block will eventually execute if all of the above conditions are <code>naramro</code>
 
 ```
 
@@ -122,7 +122,7 @@ dhanayabad
 ```
 
 <h3 align="center">Loops</h3>
-<p align="center">Statements inside <code>jaba samma</code> blocks are executed as long as a specified condition evaluates to sahi. If the condition becomes <code>galat</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>rukha</code> to break the loop and <code className="language-cpp">arko hera</code> to continue within loop.</p>
+<p align="center">Statements inside <code>jaba samma</code> blocks are executed as long as a specified condition evaluates to ramro. If the condition becomes <code>naramro</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>rukha</code> to break the loop and <code className="language-cpp">arko hera</code> to continue within loop.</p>
 
 
 ```
