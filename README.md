@@ -73,7 +73,7 @@ dhanayabad
 ```
 
 <h3 align="center">Types</h3>
-<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>nalla</code>. <code>sahi</code> and <code>galat</code> are the boolean values.</p>
+<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>akshar</code>. <code>sahi</code> and <code>galat</code> are the boolean values.</p>
 
 ```
 
@@ -82,7 +82,7 @@ namaste
   mannus b = 10 + (15*20);
   mannus c = "two";
   mannus d = 'ok';
-  mannus e = nalla;
+  mannus e = akshar;
   mannus f = sahi;
   mannus g = galat;
 dhanayabad
@@ -105,7 +105,7 @@ dhanayabad
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">Bhailang supports if-else-if ladder construct , <code>yadi</code> block will execute if condition is <code>sahi</code>, otherwise one of the subsequently added <code>anayatha yadi</code> blocks will execute if their respective condition is <code>sahi</code>, and the <code>natra </code> block will eventually execute if all of the above conditions are <code>galat</code>
+<p align="center">Mithala Matrix supports if-else-if ladder construct , <code>yadi</code> block will execute if condition is <code>sahi</code>, otherwise one of the subsequently added <code>anayatha yadi</code> blocks will execute if their respective condition is <code>sahi</code>, and the <code>natra </code> block will eventually execute if all of the above conditions are <code>galat</code>
 
 ```
 
