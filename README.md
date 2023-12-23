@@ -1,4 +1,4 @@
-<h1 align="center">Mithala Matrix</h1>
+<b><h1 align="center">Mithala Matrix</h1></b>
 
   
 
