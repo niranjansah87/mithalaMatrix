@@ -32,7 +32,7 @@ dhanayabad
 <h4 align="left">Run</h4>
 
 ```
-bhailang test.bhai
+mithala matrix test.mm
 ```
 
 <h4 align="left">Output</h4>
