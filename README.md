@@ -3,7 +3,7 @@
   
 
 <p align="center">
-  This is official repository for Mithala Mtrix.<br><br>
+  This is official repository for Mithala Mtrix Developed by Niranjan sah<br><br>
   <b>Mithala Matrix is a fun programming language written in Typescript.It is based on Nepali Language</b>
 </p>
 <br>
@@ -145,7 +145,7 @@ dhanayabad
 ```
 
 <h2 align="center">Development</h2>
-<p align="center">You can explore abstract syntax tree(AST) of bhailang <a href="https://bhailang-ast.netlify.app/" target="_blank">here</a>.</p>
+<p align="center">You can explore abstract syntax tree(AST) of mithala matrix <a href="https://bhailang-ast.netlify.app/" target="_blank">here</a>.</p>
 
 
 
