@@ -1,4 +1,4 @@
-import { Spec } from "../../constants/bhaiLangSpec";
+import { Spec } from "../../constants/mithalaMatrixSpec";
 import InvalidStateException from "../../exceptions/invalidStateException";
 
 import { Token, Tokenizer } from "./types";
@@ -61,7 +61,7 @@ export default class TokenizerImpl implements Tokenizer {
       };
     }
 
-    throw new SyntaxError(`Kya kar rha hai tu??...Unexpected token: "${string[0]}"`);
+    throw new SyntaxError(`k gardai xau tmi k??...Unexpected token: "${string[0]}"`);
   }
 
   _matched(regex: RegExp, string: string) {

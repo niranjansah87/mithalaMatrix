@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import interpreter from "Mithala-Matrix-interpreter";
+import interpreter from "mithala-matrix-interpreter";
 
 import { sendEvents } from "../../helpers";
 

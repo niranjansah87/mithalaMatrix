@@ -1,24 +1,25 @@
 import TokenizerImpl from "../../src/components/tokenizer";
-import { SPEC, TokenTypes } from "../../src/constants/bhaiLangSpec";
+import { SPEC } from "../../src/constants/mithalaMatrixSpec";
 import InvalidStateException from "../../src/exceptions/invalidStateException";
+import { TokenTypes } from "../../src/constants/mithalaMatrixSpec";
 
 const tokenizer = new TokenizerImpl(SPEC);
 
 test("test Tokenizer.getNextToken with HI_BHAI_TYPE should success", () => {
-  tokenizer.initTokenizer(`hi bhai`);
+  tokenizer.initTokenizer(`namaste`);
 
   expect(tokenizer.getNextToken()).toStrictEqual({
-    type: TokenTypes.HI_BHAI_TYPE,
-    value: "hi bhai",
+    type: TokenTypes.NAMASTE,
+    value: "namaste",
   });
 });
 
 test("test Tokenizer.getNextToken with BYE_BHAI_TYPE should success", () => {
-  tokenizer.initTokenizer(`bye bhai`);
+  tokenizer.initTokenizer(`dhanayabad`);
 
   expect(tokenizer.getNextToken()).toStrictEqual({
-    type: TokenTypes.BYE_BHAI_TYPE,
-    value: "bye bhai",
+    type: TokenTypes.DHANAYABAD,
+    value: "dhanayabad",
   });
 });
 

@@ -1,6 +1,6 @@
-import { TokenTypes } from "../../../../../constants/bhaiLangSpec";
+import { TokenTypes } from "../../../../../constants/mithalaMatrixSpec";
 import UnsupportedTypeException from "../../../../../exceptions/unsupportedTypeException";
-import BhaiLangModule from "../../../../../module/bhaiLangModule";
+import BhaiLangModule from "../../../../../module/MithalaMatrixModule";
 import TokenExecutor from "../../../tokenExecutor";
 import { ASTNode } from "../../../types/nodeTypes";
 

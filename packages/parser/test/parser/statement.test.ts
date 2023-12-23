@@ -1,7 +1,7 @@
 import Statement from "../../src/components/parser/statement";
 import BlockStatement from "../../src/components/parser/statement/blockStatement";
-import { TokenTypes } from "../../src/constants/bhaiLangSpec";
-import BhaiLangModule from "../../src/module/bhaiLangModule";
+import { TokenTypes } from "../../src/constants/mithalaMatrixSpec";
+import MithalaMatrixModule from "../../src/module/MithalaMatrixModule";
 
 jest.mock("../../src/module/bhaiLangModule");
 
@@ -19,7 +19,7 @@ test("test getStatementImpl of statement class with should success", () => {
     value: "{",
   };
 
-  BhaiLangModule.getBlockStatement = jest
+  MithalaMatrixModule.getBlockStatement = jest
     .fn()
     .mockReturnValue(blockStatementMock);
 
@@ -27,5 +27,5 @@ test("test getStatementImpl of statement class with should success", () => {
     blockStatementMock
   );
 
-  expect(BhaiLangModule.getBlockStatement).toHaveBeenCalledTimes(1);
+  expect(MithalaMatrixModule.getBlockStatement).toHaveBeenCalledTimes(1);
 });

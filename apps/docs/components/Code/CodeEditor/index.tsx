@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 
 import dynamic from "next/dynamic";
 import { highlight } from "prismjs";
@@ -6,15 +6,14 @@ import { highlight } from "prismjs";
 import { mithalaMatrixSyntax } from "../../common/syntax";
 
 import "prismjs/themes/prism-tomorrow.css";
+import CopyToClipboard from '../../CopyToClipboard';
 
 
 const Editor = dynamic(() => import("react-simple-code-editor"), {
   ssr: false,
 });
 
-const CopyToClipboard = dynamic(() => import("../../CopyToClipboard"), {
-  ssr: false,
-});
+
 
 const CodeEditor = (props: Props) => {
   const { handleChange, code } = props;

@@ -1,5 +1,5 @@
 {
-  "name": "Mithala-Matrix-parser",
+  "name": "mithala-matrix-parser",
   "version": "0.0.2",
   "description": "Parser for mithila-Matrix",
   "source": "src/index.ts",

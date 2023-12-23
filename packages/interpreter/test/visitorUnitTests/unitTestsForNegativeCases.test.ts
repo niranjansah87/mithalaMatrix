@@ -1,4 +1,4 @@
-import { NodeType } from "Mithala-Matrix-parser";
+import { NodeType } from "mithala-matrix-parser";
 
 import { RuntimeException } from "../../src";
 import Scope from "../../src/components/scope";

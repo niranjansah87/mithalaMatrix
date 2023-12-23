@@ -1,5 +1,5 @@
-import NallaPointerException from "../../src/exceptions/nallaPointerException";
-import bhaiLangModule from "../../src/module/bhaiLangModule";
+import NallaPointerException from "../../src/exceptions/aksharPointerException";
+import bhaiLangModule from "../../src/module/MithalaMatrixModule";
 
 import {
   IfStatementNagativeTests,
