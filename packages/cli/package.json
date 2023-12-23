@@ -48,6 +48,6 @@
     "@types/jest": "^27.4.0",
     "config": "*",
     "tsconfig": "*",
-    "Mithala-Matrix-interpreter": "*"
+    "mithala-matrix-interpreter": "*"
   }
 }

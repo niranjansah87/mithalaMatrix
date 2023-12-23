@@ -37,5 +37,6 @@
     "config": "*",
     "tsconfig": "*",
     "mithala-matrix-parser": "*"
+    
   }
 }
