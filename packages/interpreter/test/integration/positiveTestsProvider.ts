@@ -3,8 +3,8 @@ export const NoOutputPositiveTests = [
   {
     name: "interpreter empty init statement test, should success",
     input: `
-      hi bhai
-      bye bhai
+      namaste
+      dhanayabad
     `,
   },
   {
@@ -12,139 +12,139 @@ export const NoOutputPositiveTests = [
     input: `
       some random characters
       random random random
-      hi bhai
-      bye bhai
+      namaste
+      dhanayabad
     `,
   },
   // empty statement tests
   {
     name: "interpreter empty statement test, should success",
     input: `
-      hi bhai
+      namaste
       ;
-      bye bhai
+      dhanayabad
     `,
   },
   {
     name: "interpreter multiple empty statements test, should success",
     input: `
-      hi bhai
+      namaste
       ;
       ;
       ;;
-      bye bhai
+      dhanayabad
     `,
   },
   // block statement tests
   {
     name: "interpreter block statement test with empty block, should success",
     input: `
-      hi bhai
+      namaste
       {};
-      bye bhai
+      dhanayabad
     `,
   },
   {
     name: "interpreter block statement test with variable statement inside, should success",
     input: `
-      hi bhai
+      namaste
       {
-        bhai ye hai a = 4;
+        mannus a = 4;
       }
-      bye bhai
+      dhanayabad
     `,
   },
   // variable statement test
   {
     name: "interpreter variable statement test with basic variable declaration, should success",
     input: `
-      hi bhai
-      bhai ye hai a, b, c;
-      bye bhai
+      namaste
+      mannus a, b, c;
+      dhanayabad
     `,
   },
   {
     name: "interpreter variable statement test with basic variable declaration and initialisation, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 10, b = "crap";
-      bye bhai
+      namaste
+      mannus a = 10, b = "crap";
+      dhanayabad
     `,
   },
   {
     name: "interpreter variable statement test with multiple variable initialisation, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 10, b = 5;
-      bye bhai
+      namaste
+      mannus a = 10, b = 5;
+      dhanayabad
     `,
   },
   {
     name: "interpreter variable statement test with variable initialisation with some expression, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 7 + 90;
-      bye bhai
+      namaste
+      mannus a = 7 + 90;
+      dhanayabad
     `,
   },
   // assignment expression tests
   {
     name: "simple assignment expression test with only one identifer, should success",
     input: `
-      hi bhai
-      bhai ye hai a = sahi;
+      namaste
+      mannus a = ramro;
       a = 4;
-      bye bhai
+      dhanayabad
     `,
   },
   {
     name: "complex assignment expression test with only one identifer, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 2;
+      namaste
+      mannus a = 2;
       a *= 4;
-      bye bhai
+      dhanayabad
     `,
   },
   // paranthesized expression tests
   {
     name: "paranthesized expression test with one parenthesis and simple expression, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 2;
+      namaste
+      mannus a = 2;
       (a + 4);
-      bye bhai
+      dhanayabad
     `,
   },
   {
     name: "paranthesized expression test with one parenthesis and complex expression, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 2;
+      namaste
+      mannus a = 2;
       (a + 4) * 10 + (5 - 4);
-      bye bhai
+      dhanayabad
     `,
   },
   {
     name: "paranthesized expression test with multiple parenthesis, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 2;
+      namaste
+      mannus a = 2;
       (a * (4 + 8) + 10);
-      bye bhai
+      dhanayabad
     `,
   },
   // if statement test
   {
     name: "paranthesized expression test with multiple parenthesis, should success",
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x != 9) {
+    namaste
+    mannus x = 9;
+    yadi (x != 9) {
       x = 5;
-      bol bhai x;
-    } warna bhai (x >= 9);
-    bye bhai;
+      dekhau x;
+    } natra (x >= 9);
+    dhanayabad;
     `,
   },
 ];
@@ -153,636 +153,636 @@ export const WithOutputPositiveTests = [
   {
     name: "variable assignment test with multiple variables, should success",
     input: `
-      hi bhai;
-      bhai ye hai a , b;
+      namaste;
+      mannus a , b;
       a = b = 60;
-      bol bhai a, b;
-      bye bhai
+      dekhau a, b;
+      dhanayabad
     `,
     output: "60 60",
   },
   {
-    name: `binaryExpression print test with nalla and "==", should success`,
+    name: `binaryExpression print test with akshar and "==", should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      agar bhai (a == nalla) {
-        bol bhai a;
+      namaste;
+      mannus a;
+      yadi (a == akshar) {
+        dekhau a;
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nalla",
+    output: "akshar",
   },
   {
-    name: `binaryExpression print test with nalla without any operator, should success`,
+    name: `binaryExpression print test with akshar without any operator, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      agar bhai (a) {
-        bol bhai a;
-      } warna bhai {
-        bol bhai "not nalla";
+      namaste;
+      mannus a;
+      yadi (a) {
+        dekhau a;
+      } natra {
+        dekhau "not akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "not nalla",
+    output: "not akshar",
   },
   {
-    name: `binaryExpression print test - comparing nalla with nalla "==", should success`,
+    name: `binaryExpression print test - comparing akshar with akshar "==", should success`,
     input: `
-      hi bhai;
-      agar bhai (nalla == nalla) {
-        bol bhai "hai nalla";
+      namaste;
+      yadi (akshar == akshar) {
+        dekhau "akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai nalla",
+    output: "akshar",
   },
   {
-    name: `binaryExpression print test with comparing nalla with var "a", should success`,
+    name: `binaryExpression print test with comparing akshar with var "a", should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      agar bhai (nalla == a) {
-        bol bhai "hai nalla";
+      namaste;
+      mannus a;
+      yadi (akshar == a) {
+        dekhau "akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai nalla",
+    output: "akshar",
   },
   {
-    name: `binaryExpression print test with comparing nalla with var "a" explicit initialization, should success`,
+    name: `binaryExpression print test with comparing akshar with var "a" explicit initialization, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = nalla;
-      agar bhai (nalla == a) {
-        bol bhai "hai nalla";
+      namaste;
+      mannus a = akshar;
+      yadi (akshar == a) {
+        dekhau "akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai nalla",
+    output: "akshar",
   },
   {
-    name: `binaryExpression print test with comparing nalla with string nalla, should success`,
+    name: `binaryExpression print test with comparing akshar with string akshar, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = nalla;
-      agar bhai ("nalla" == a) {
-        bol bhai "hai nalla";
-      } warna bhai {
-        bol bhai "not nalla";
+      namaste;
+      mannus a = akshar;
+      yadi ("akshar" == a) {
+        dekhau "akshar";
+      } natra {
+        dekhau "not akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "not nalla",
+    output: "not akshar",
   },
   {
-    name: `binaryExpression print test with comparing nalla with string nalla, should success`,
+    name: `binaryExpression print test with comparing akshar with string akshar, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = "nalla";
-      agar bhai (nalla == a) {
-        bol bhai "hai nalla";
-      } warna bhai {
-        bol bhai "not nalla";
+      namaste;
+      mannus a = "akshar";
+      yadi (akshar == a) {
+        dekhau "akshar";
+      } natra {
+        dekhau "not akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "not nalla",
+    output: "not akshar",
   },
   {
-    name: `binaryExpression print test with comparing nalla with string null, should success`,
+    name: `binaryExpression print test with comparing akshar with string null, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = "null";
-      agar bhai (nalla == a) {
-        bol bhai "hai nalla";
-      } warna bhai {
-        bol bhai "not nalla";
+      namaste;
+      mannus a = "null";
+      yadi (akshar == a) {
+        dekhau "akshar";
+      } natra {
+        dekhau "not akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "not nalla",
+    output: "not akshar",
   },
   {
-    name: `binaryExpression print test with nalla var "a" & "b" - 0, should success`,
+    name: `binaryExpression print test with akshar var "a" & "b" - 0, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bhai ye hai b;
-      agar bhai (a == b) {
-        bol bhai "hai nalla";
-      } warna bhai {
-        bol bhai "nahi nalla";
+      namaste;
+      mannus a;
+      mannus b;
+      yadi (a == b) {
+        dekhau "akshar";
+      } natra {
+        dekhau "xain akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai nalla",
+    output: "akshar",
   },
   {
-    name: `binaryExpression print test with nalla var "a" & "b" - 1, should success`,
+    name: `binaryExpression print test with akshar var "a" & "b" - 1, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bhai ye hai b = nalla;
-      agar bhai (a == b) {
-        bol bhai "hai nalla";
-      } warna bhai {
-        bol bhai "nahi nalla";
+      namaste;
+      mannus a;
+      mannus b = akshar;
+      yadi (a == b) {
+        dekhau "akshar";
+      } natra {
+        dekhau "xain akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai nalla",
+    output: "akshar",
   },
   {
-    name: `binaryExpression print test with nalla var "a" & "b" -2, should success`,
+    name: `binaryExpression print test with akshar var "a" & "b" -2, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bhai ye hai b = "nalla";
-      agar bhai (a == b) {
-        bol bhai "hai nalla";
-      } warna bhai {
-        bol bhai "nahi nalla";
+      namaste;
+      mannus a;
+      mannus b = "akshar";
+      yadi (a == b) {
+        dekhau "akshar";
+      } natra {
+        dekhau "xain akshar";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nahi nalla",
+    output: "xain akshar",
   },
   // Boolean test
   {
-    name: `binaryExpression print test with boolean expression - sahi, should success`,
+    name: `binaryExpression print test with boolean expression - ramro, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = sahi;
-      agar bhai (sahi == a) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a = ramro;
+      yadi (ramro == a) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai sahi",
+    output: "ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - galat, should success`,
+    name: `binaryExpression print test with boolean expression - naramro, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = galat;
-      agar bhai (galat == a) {
-        bol bhai "hai galat";
-      } warna bhai {
-        bol bhai "nahi galat";
+      namaste;
+      mannus a = naramro;
+      yadi (naramro == a) {
+        dekhau "naramro";
+      } natra {
+        dekhau "naramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai galat",
+    output: "naramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi with string sahi, should success`,
+    name: `binaryExpression print test with boolean expression - ramro with string ramro, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = "sahi";
-      agar bhai (sahi == a) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a = "ramro";
+      yadi (ramro == a) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nahi sahi",
+    output: "xain ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression, should success`,
+    name: `binaryExpression print test with boolean expression - ramro expression, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 7;
-      agar bhai (sahi == (a > 5)) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a = 7;
+      yadi (ramro == (a > 5)) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai sahi",
+    output: "ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression & string "sahi", should success`,
+    name: `binaryExpression print test with boolean expression - ramro expression & string "ramro", should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 7;
-      agar bhai ("sahi" == (a > 5)) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a = 7;
+      yadi ("ramro" == (a > 5)) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nahi sahi",
+    output: "xain ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression & two expressions, should success`,
+    name: `binaryExpression print test with boolean expression - ramro expression & two expressions, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = sahi;
-      agar bhai ("sahi" == (a == sahi)) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a = ramro;
+      yadi ("ramro" == (a == ramro)) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nahi sahi",
+    output: "xain ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression -3, should success`,
+    name: `binaryExpression print test with boolean expression - ramro expression -3, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = sahi;
-      agar bhai ((a == sahi) == (a == sahi)) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a = ramro;
+      yadi ((a == ramro) == (a == ramro)) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai sahi",
+    output: "ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression - 4, should success`,
+    name: `binaryExpression print test with boolean expression - ramro expression - 4, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      agar bhai ((a == nalla) == (a == sahi)) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a;
+      yadi ((a == akshar) == (a == ramro)) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nahi sahi",
+    output: "xain ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression - 5, should success`,
+    name: `binaryExpression print test with boolean expression - ramro expression - 5, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      agar bhai ((a == nalla) == (a == sahi)) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a;
+      yadi ((a == akshar) == (a == ramro)) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nahi sahi",
+    output: "xain ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - sahi expression - 5, should success`,
+    name: `binaryExpression print test with boolean expression - ramro expression - 5, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bhai ye hai b = galat;
-      agar bhai (a == b) {
-        bol bhai "hai sahi";
-      } warna bhai {
-        bol bhai "nahi sahi";
+      namaste;
+      mannus a;
+      mannus b = naramro;
+      yadi (a == b) {
+        dekhau "ramro";
+      } natra {
+        dekhau "xain ramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nahi sahi",
+    output: "xain ramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - galat variables comparison, should success`,
+    name: `binaryExpression print test with boolean expression - naramro variables comparison, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = galat;
-      bhai ye hai b = galat;
-      agar bhai (a == b) {
-        bol bhai "hai galat";
-      } warna bhai {
-        bol bhai "nahi galat";
+      namaste;
+      mannus a = naramro;
+      mannus b = naramro;
+      yadi (a == b) {
+        dekhau "naramro";
+      } natra {
+        dekhau "xain naramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "hai galat",
+    output: "naramro",
   },
   {
-    name: `binaryExpression print test with boolean expression - galat variables comparison with string galat, should success`,
+    name: `binaryExpression print test with boolean expression - naramro variables comparison with string naramro, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = "galat";
-      bhai ye hai b = galat;
-      agar bhai (a == b) {
-        bol bhai "hai galat";
-      } warna bhai {
-        bol bhai "nahi galat";
+      namaste;
+      mannus a = "naramro";
+      mannus b = naramro;
+      yadi (a == b) {
+        dekhau "naramro";
+      } natra {
+        dekhau "xain naramro";
       }
-      bye bhai
+      dhanayabad
     `,
-    output: "nahi galat",
+    output: "xain naramro",
   },
   {
     name: "float value addition with integer value test, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 1.2, b = 2;
-      bol bhai a + b;
-      bye bhai
+      namaste
+      mannus a = 1.2, b = 2;
+      dekhau a + b;
+      dhanayabad
     `,
     output: "3.2"
   },
   {
     name: "float value addition with float value value test, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 1.2, b = 2.3;
-      bol bhai a + b;
-      bye bhai
+      namaste
+      mannus a = 1.2, b = 2.3;
+      dekhau a + b;
+      dhanayabad
     `,
     output: "3.5"
   },
   {
     name: "printStatement test with multiple expressions, should success",
     input: `
-      hi bhai;
-      bhai ye hai a = 2, b = 60;
-      bol bhai (a * (4 + 8) + 10), b;
-      bye bhai
+      namaste;
+      mannus a = 2, b = 60;
+      dekhau (a * (4 + 8) + 10), b;
+      dhanayabad
     `,
     output: "34 60",
   },
   {
     name: "printStatement test with multiple expressions and re assigning value of one variable, should success",
     input: `
-      hi bhai;
-      bhai ye hai a = 2, b = 60;
+      namaste;
+      mannus a = 2, b = 60;
 
       a = b + 3;
-      bol bhai a, b;
-      bye bhai
+      dekhau a, b;
+      dhanayabad
     `,
     output: "63 60",
   },
   {
     name: "printStatement test with multiple expressions & without any variables, should success",
     input: `
-      hi bhai;
-      bol bhai "hello", sahi, galat;
-      bye bhai
+      namaste;
+      dekhau "hello", ramro, naramro;
+      dhanayabad
     `,
-    output: "hello sahi galat",
+    output: "hello ramro naramro",
   },
   {
-    name: "printStatement test with nalla, should success",
+    name: "printStatement test with akshar, should success",
     input: `
-      hi bhai;
-      bol bhai nalla;
-      bye bhai;
+      namaste;
+      dekhau akshar;
+      dhanayabad;
     `,
-    output: "nalla",
+    output: "akshar",
   },
   {
-    name: "printStatement test with nalla as second parameter, should success",
+    name: "printStatement test with akshar as second parameter, should success",
     input: `
-      hi bhai;
-      bol bhai 10, nalla;
-      bye bhai;
+      namaste;
+      dekhau 10, akshar;
+      dhanayabad;
     `,
-    output: "10 nalla",
+    output: "10 akshar",
   },
   {
     name: "printStatement test with string concatenation, should success",
     input: `
-      hi bhai;
-      bol bhai "hello" + "crap";
-      bye bhai;
+      namaste;
+      dekhau "hello" + "crap";
+      dhanayabad;
     `,
     output: "hellocrap",
   },
   {
-    name: "printStatement test with multiple expresions including nalla, should success",
+    name: "printStatement test with multiple expresions including akshar, should success",
     input: `
-      hi bhai;
-      bhai ye hai a = 70;
-      bol bhai 6*5, nalla, "jamtara", a;
-      bye bhai;
+      namaste;
+      mannus a = 70;
+      dekhau 6*5, akshar, "jamtara", a;
+      dhanayabad;
     `,
-    output: "30 nalla jamtara 70",
+    output: "30 akshar jamtara 70",
   },
   {
-    name: "printStatement test with nalla variable, should success",
+    name: "printStatement test with akshar variable, should success",
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bol bhai a;
-      bye bhai;
+      namaste;
+      mannus a;
+      dekhau a;
+      dhanayabad;
     `,
-    output: "nalla",
+    output: "akshar",
   },
   {
     name: `printStatement test with string "undefined", should success`,
     input: `
-      hi bhai;
-      bol bhai "undefined";
-      bye bhai;
+      namaste;
+      dekhau "undefined";
+      dhanayabad;
     `,
     output: "undefined",
   },
   {
-    name: `printStatement test with nalla variable, should success`,
+    name: `printStatement test with akshar variable, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bol bhai a;
-      bye bhai;
+      namaste;
+      mannus a;
+      dekhau a;
+      dhanayabad;
     `,
-    output: "nalla",
+    output: "akshar",
   },
   {
-    name: `printStatement test with sahi variable, should success`,
+    name: `printStatement test with ramro variable, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = sahi;
-      bol bhai a;
-      bye bhai;
+      namaste;
+      mannus a = ramro;
+      dekhau a;
+      dhanayabad;
     `,
-    output: "sahi",
+    output: "ramro",
   },
   {
-    name: `printStatement test with galat variable, should success`,
+    name: `printStatement test with naramro variable, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = galat;
-      bol bhai a;
-      bye bhai;
+      namaste;
+      mannus a = naramro;
+      dekhau a;
+      dhanayabad;
     `,
-    output: "galat",
+    output: "naramro",
   },
   {
     name: `printStatement test with assignment expression, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bol bhai a = 90;
-      bye bhai;
+      namaste;
+      mannus a;
+      dekhau a = 90;
+      dhanayabad;
     `,
     output: "90",
   },
   {
     name: `printStatement test with logical AND, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 && 10;
-      bye bhai;
+      namaste;
+      dekhau 9 && 10;
+      dhanayabad;
     `,
     output: "10",
   },
   {
     name: `printStatement test with logical OR, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 || 10;
-      bye bhai;
+      namaste;
+      dekhau 9 || 10;
+      dhanayabad;
     `,
     output: "9",
   },
   {
     name: `printStatement test with logical - 1, should success`,
     input: `
-      hi bhai;
-      bol bhai galat && sahi;
-      bye bhai;
+      namaste;
+      dekhau naramro && ramro;
+      dhanayabad;
     `,
-    output: "galat",
+    output: "naramro",
   },
   {
     name: `printStatement test with logical - 2, should success`,
     input: `
-    hi bhai;
-    bhai ye hai a = sahi;
-    bol bhai a && galat;
-    bye bhai;
+    namaste;
+    mannus a = ramro;
+    dekhau a && naramro;
+    dhanayabad;
     `,
-    output: "galat",
+    output: "naramro",
   },
   {
     name: `printStatement test with logical - 3, should success`,
     input: `
-    hi bhai;
-    bhai ye hai a = sahi;
-    bol bhai a && sahi;
-    bye bhai;
+    namaste;
+    mannus a = ramro;
+    dekhau a && ramro;
+    dhanayabad;
     `,
-    output: "sahi",
+    output: "ramro",
   },
   {
     name: `printStatement test with equality, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 == 10;
-      bye bhai;
+      namaste;
+      dekhau 9 == 10;
+      dhanayabad;
     `,
-    output: "galat",
+    output: "naramro",
   },
   {
     name: `printStatement test with inequality, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 != 10;
-      bye bhai;
+      namaste;
+      dekhau 9 != 10;
+      dhanayabad;
     `,
-    output: "sahi",
+    output: "ramro",
   },
   {
     name: `printStatement test with logical OR, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 || 10;
-      bye bhai;
+      namaste;
+      dekhau 9 || 10;
+      dhanayabad;
     `,
     output: "9",
   },
   {
     name: `printStatement test with logical OR - 2, should success`,
     input: `
-      hi bhai;
-      bol bhai galat || sahi;
-      bye bhai;
+      namaste;
+      dekhau naramro || ramro;
+      dhanayabad;
     `,
-    output: "sahi",
+    output: "ramro",
   },
   {
-    name: `printStatement test with boolean sahi galat and logical, should success`,
+    name: `printStatement test with boolean ramro naramro and logical, should success`,
     input: `
-      hi bhai;
-      bol bhai sahi != 10;
-      bye bhai;
+      namaste;
+      dekhau ramro != 10;
+      dhanayabad;
     `,
-    output: "sahi",
+    output: "ramro",
   },
   {
-    name: `printStatement test with boolean sahi and string "sahi", should success`,
+    name: `printStatement test with boolean ramro and string "ramro", should success`,
     input: `
-      hi bhai;
-      bol bhai "sahi" == sahi;
-      bye bhai;
+      namaste;
+      dekhau "ramro" == ramro;
+      dhanayabad;
     `,
-    output: "galat",
+    output: "naramro",
   },
   // while statement / loop tests
   {
     name: `whileStatement test with 1 time loop, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 0;
-      jab tak bhai (a < 1) {
-        bol bhai "bhai";
+      namaste;
+      mannus a = 0;
+      jaba samma b(a < 1) {
+        dekhau "bhai";
         a += 1;
       }
-      bye bhai;
+      dhanayabad;
     `,
     output: "bhai",
   },
   {
     name: `whileStatement test with single break statement, should success`,
     input: `
-      hi bhai;
-      jab tak bhai (sahi) 
-        bas kar bhai;
-      bol bhai "end";
-      bye bhai;
+      namaste;
+      jaba samma b(ramro) 
+        rukha;
+      dekhau "end";
+      dhanayabad;
     `,
     output: "end",
   },
   {
     name: `whileStatement test with nested loops, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 0;
-      jab tak bhai (a < 2) {
-        jab tak bhai (sahi)
-          bas kar bhai;
-        bol bhai "hello";
-        agar bhai (sahi)
-          bas kar bhai;
+      namaste;
+      mannus a = 0;
+      jaba samma b(a < 2) {
+        jaba samma b(ramro)
+          rukha;
+        dekhau "hello";
+        yadi (ramro)
+          rukha;
       }
-      bye bhai;
+      dhanayabad;
     `,
     output: "hello",
   },
   {
     name: `whileStatement with multiple breaks, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 0;
-      jab tak bhai (a < 2) {
-        bol bhai "hello";
-        agar bhai (sahi)
-          bas kar bhai;
-        bas kar bhai;
-        bas kar bhai;
+      namaste;
+      mannus a = 0;
+      jaba samma b(a < 2) {
+        dekhau "hello";
+        yadi (ramro)
+          rukha;
+        rukha;
+        rukha;
       }
-      bye bhai;
+      dhanayabad;
     `,
     output: "hello",
   },
@@ -790,37 +790,37 @@ export const WithOutputPositiveTests = [
   {
     name: `if statement success test - 1: only if, should success`,
     input: `
-    hi bhai
-    agar bhai (sahi) {
-      bol bhai "bhai";
+    namaste
+    yadi (ramro) {
+      dekhau "bhai";
     }
-    bye bhai;
+    dhanayabad;
     `,
     output: "bhai",
   },
   {
     name: `if statement success test - 2: if else both, should success`,
     input: `
-    hi bhai
-    agar bhai (sahi) {
-      bol bhai "sahi";
-    } warna bhai {
-      bol bhai "galat";
+    namaste
+    yadi (ramro) {
+      dekhau "ramro";
+    } natra {
+      dekhau "naramro";
     }
-    bye bhai;
+    dhanayabad;
     `,
-    output: "sahi",
+    output: "ramro",
   },
   {
     name: `if statement success test - 3: if only with comarison condn, should success`,
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x >= 9) {
+    namaste
+    mannus x = 9;
+    yadi (x >= 9) {
       x = 5;
-      bol bhai x;
+      dekhau x;
     } 
-    bye bhai;
+    dhanayabad;
     `,
     output: "5",
   },
@@ -828,149 +828,149 @@ export const WithOutputPositiveTests = [
   {
     name: `else-if statement success test - 1: if with one else-if, should success`,
     input: `
-    hi bhai
-    agar bhai (galat) {
-      bol bhai "galat";
-    } nahi to bhai (sahi) {
-      bol bhai "sahi";
+    namaste
+    yadi (naramro) {
+      dekhau "naramro";
+    } anayatha yadi(ramro) {
+      dekhau "ramro";
     }
-    bye bhai;
+    dhanayabad;
     `,
-    output: "sahi",
+    output: "ramro",
   },
   {
     name: `else-if statement success test - 2: if with multiple else-ifs, should success`,
     input: `
-    hi bhai
-    bhai ye hai x = 10;
-    agar bhai (x < 5) {
-      bol bhai "x < 5";
-    } nahi to bhai (x < 8) {
-      bol bhai "x < 8";
-    } nahi to bhai (x < 12) {
-      bol bhai "x < 12";
-    } nahi to bhai (x < 15) {
-      bol bhai "x < 15";
+    namaste
+    mannus x = 10;
+    yadi (x < 5) {
+      dekhau "x < 5";
+    } anayatha yadi(x < 8) {
+      dekhau "x < 8";
+    } anayatha yadi(x < 12) {
+      dekhau "x < 12";
+    } anayatha yadi(x < 15) {
+      dekhau "x < 15";
     }
-    bye bhai;
+    dhanayabad;
     `,
     output: "x < 12",
   },
   {
     name: `else-if statement success test - 3: nested if-else-if ladder, should success`,
     input: `
-    hi bhai
-    bhai ye hai a = 15;
-    agar bhai (a < 0) {
-      bol bhai "a < 0";
-    } nahi to bhai (a > 0) {
-      agar bhai (a < 10) {
-        bol bhai "a < 10";
-      } nahi to bhai (a < 20) {
-        bol bhai "a < 20";
+    namaste
+    mannus a = 15;
+    yadi (a < 0) {
+      dekhau "a < 0";
+    } anayatha yadi(a > 0) {
+      yadi (a < 10) {
+        dekhau "a < 10";
+      } anayatha yadi(a < 20) {
+        dekhau "a < 20";
       }
     }
-    bye bhai
+    dhanayabad
     `,
     output: "a < 20",
   },
   {
     name: `else-if statement success test - 4: if-else-if ladder evaluating to else, should success`,
     input: `
-    hi bhai
-    bhai ye hai x = 15;
-    agar bhai (x < 5) {
-      bol bhai "x < 5";
-    } nahi to bhai (x < 8) {
-      bol bhai "x < 8";
-    } nahi to bhai (x < 12) {
-      bol bhai "x < 12";
-    } warna bhai {
-      bol bhai "x > 12";
+    namaste
+    mannus x = 15;
+    yadi (x < 5) {
+      dekhau "x < 5";
+    } anayatha yadi(x < 8) {
+      dekhau "x < 8";
+    } anayatha yadi(x < 12) {
+      dekhau "x < 12";
+    } natra {
+      dekhau "x > 12";
     }
-    bye bhai;
+    dhanayabad;
     `,
     output: "x > 12",
   },
   // logical expression test
   {
-    name: `logical "&&" test with sahi galat, should success`,
+    name: `logical "&&" test with ramro naramro, should success`,
     input: `
-        hi bhai
-        agar bhai (sahi && galat) {
-          bol bhai "sahi";
-        } warna bhai {
-          bol bhai "galat";
+        namaste
+        yadi (ramro && naramro) {
+          dekhau "ramro";
+        } natra {
+          dekhau "naramro";
         }
-        bye bhai;
+        dhanayabad;
       `,
-    output: `galat`,
+    output: `naramro`,
   },
   // modulus operator test
   {
     name: `modulus operator "%" test, should success`,
     input: `
-        hi bhai
-        bol bhai 90 % 9;
-        bye bhai;
+        namaste
+        dekhau 90 % 9;
+        dhanayabad;
       `,
     output: `0`,
   },
   {
     name: `modulus operator "%" test - 2, should success`,
     input: `
-        hi bhai
-        bol bhai 27 % 5;
-        bye bhai;
+        namaste
+        dekhau 27 % 5;
+        dhanayabad;
       `,
     output: `2`,
   },
   {
     name: `modulus operator "%" test - 2, should success`,
     input: `
-        hi bhai
-        bol bhai 5 % 20;
-        bye bhai;
+        namaste
+        dekhau 5 % 20;
+        dhanayabad;
       `,
     output: `5`,
   },
   {
     name: `whileStatement test with single continue statement, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 5;
-      bhai ye hai step = 0;
-      jab tak bhai (a > 0) {
+      namaste;
+      mannus a = 5;
+      mannus step = 0;
+      jaba samma b(a > 0) {
         step += 1;
-        agar bhai (a % 2 != 0){
+        yadi (a % 2 != 0){
           a -= 2;
-          agla dekh bhai;
+          arko hera;
         }
         a -= 1;
       }
-      bol bhai step;
-      bye bhai;
+      dekhau step;
+      dhanayabad;
     `,
     output: "3",
   },
   {
     name: `whileStatement test with multiple continue statement, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 5;
-      bhai ye hai step = 0;
-      jab tak bhai (a > 0) {
+      namaste;
+      mannus a = 5;
+      mannus step = 0;
+      jaba samma b(a > 0) {
         step += 1;
-        agar bhai (a % 2 == 0){
+        yadi (a % 2 == 0){
           a -= 2;
-          agla dekh bhai;
+          arko hera;
         }
         a -= 1;
-        agla dekh bhai;
-        bol bhai "oye oye oye.. yha tk nhi aana tha bhai";
+        arko hera;
+        dekhau "oye oye oye.. yha tk nhi aaxaintha bhai";
       }
-      bol bhai step;
-      bye bhai;
+      dekhau step;
+      dhanayabad;
     `,
     output: "3",
   },
@@ -979,20 +979,20 @@ export const WithOutputPositiveTests = [
     // a: 10 => 7 => 6 => 3 => 2 => -1
     name: `whileStatement test with single continue statement without block, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 10;
-      bhai ye hai step = 0;
-      jab tak bhai (a > 0) {
-        agar bhai (a % 2 == 0){
+      namaste;
+      mannus a = 10;
+      mannus step = 0;
+      jaba samma b(a > 0) {
+        yadi (a % 2 == 0){
           a -= 3;
-          agla dekh bhai;
+          arko hera;
         }
         a -= 1;
-        agar bhai (step == 1) agla dekh bhai
+        yadi (step == 1) arko hera
         step += 1;
       }
-      bol bhai step;
-      bye bhai;
+      dekhau step;
+      dhanayabad;
     `,
     output: "1",
   },
