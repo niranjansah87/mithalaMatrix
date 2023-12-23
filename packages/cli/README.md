@@ -1,26 +1,22 @@
-<h1 align="center">Bhai Lang</h1>
-<p align="center">
-<a href="https://lgtm.com/projects/g/niranjansah87/mithalaMatrix/alerts/"><img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/niranjansah87/mithalaMatrix.svg?logo=lgtm&logoWidth=18"/></a>
-<a href="https://lgtm.com/projects/g/niranjansah87/mithalaMatrix/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/niranjansah87/mithalaMatrix.svg?logo=lgtm&logoWidth=18"/></a>
-<a href="https://github.com/niranjansah87/mithalaMatrix/actions/workflows/node.js.yml/badge.svg"><img alt="Build" src="https://github.com/niranjansah87/mithalaMatrix/actions/workflows/node.js.yml/badge.svg"/></a>
-<a href="https://bhailang.js.org/"><img alt="Build" src="https://img.shields.io/badge/website-bhailang.js.org-orange"/></a>
-<a href="https://www.npmjs.com/package/bhailang"><img alt="Build" src="https://img.shields.io/badge/npm-bhailang-orange"/></a>
+<b><h1 align="center">Mithala Matrix</h1></b>
+
   
-</p>
+
 <p align="center">
-  <b>Mithala Matrix is a funny programming language written in Typescript.</b>
+  This is official repository for Mithala Mtrix Developed by Niranjan sah<br><br>
+  <b>Mithala Matrix is a fun programming language written in Typescript.It is based on Nepali Language</b>
 </p>
 <br>
 
 <h2 align="center">Installation</h2>
 
 ```
-npm i -g bhailang
+npm i -g mithalamatrix
 ```
 
 <h2 align="center">Usage</h2>
 
-<h4 align="left">Create a new file</h4><br/>
+<h4 align="left">Create a new file (<code>test.mm</code>)</h4>
 
 
 <h4 align="left">Edit the file with a text editor.
@@ -36,7 +32,7 @@ dhanayabad
 <h4 align="left">Run</h4>
 
 ```
-bhailang test.bhai
+mithala matrix test.mm
 ```
 
 <h4 align="left">Output</h4>
@@ -44,8 +40,6 @@ bhailang test.bhai
 ```
 hello bhai
 ```
-
-
 
 <h2 align="center">Documentation</h2>
 
@@ -79,7 +73,7 @@ dhanayabad
 ```
 
 <h3 align="center">Types</h3>
-<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>akshar. ramro and naramro</code> are the boolean values.</p>
+<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>akshar</code>. <code>ramro</code> and <code>naramro</code> are the boolean values.</p>
 
 ```
 
@@ -106,27 +100,29 @@ namaste
     mannus b = 20;
     dekhau a + b;
   }
-  dekhau 5, 'ok', akshar , ramro , naramro;
+  dekhau 5, 'ok', nalla , ramro , naramro;
 dhanayabad
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">Bhailang supports simple if else construct , <code>yadi</code> block will execute if condition is <code>ramro</code> and <code>natra</code> block will execute if condition is <code>naramro</code>.</p>
+<p align="center">Mithala Matrix supports if-else-if ladder construct , <code>yadi</code> block will execute if condition is <code>ramro</code>, otherwise one of the subsequently added <code>anayatha yadi</code> blocks will execute if their respective condition is <code>ramro</code>, and the <code>natra </code> block will eventually execute if all of the above conditions are <code>naramro</code>
 
 ```
 
 namaste
   mannus a = 10;
-  yadi (a < 25) {
-   dekhau "a is less than 25";
-  } natra {
-   dekhau "a is greater than or equal to 25";
-  }
+  yadi (a < 20) {
+    dekhau "a is less than 20";
+  } anayatha yadi ( a < 25 ) {
+    dekhau "a is less than 25";
+  } natra {
+    dekhau "a is greater than or equal to 25";
+  }
 dhanayabad
 ```
 
 <h3 align="center">Loops</h3>
-<p align="center">Statements inside <code>jaba samma</code> blocks are executed as long as a specified condition evaluates to ramro. If the condition becomes <code>naramro</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>rukha</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
+<p align="center">Statements inside <code>jaba samma</code> blocks are executed as long as a specified condition evaluates to ramro. If the condition becomes <code>naramro</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>rukha</code> to break the loop and <code className="language-cpp">arko hera</code> to continue within loop.</p>
 
 
 ```
@@ -136,8 +132,8 @@ namaste
   jaba samma (a < 10) {
    a += 1;
    yadi (a == 5) {
-    dekhau "andar se dekhau ", a;
-    agla dekh bhai;
+    dekhau "vitra bata dekha ", a;
+    arko hera;
    }
    yadi (a == 6) {
     rukha;
@@ -147,6 +143,14 @@ namaste
   dekhau "done";
 dhanayabad
 ```
+
+<h2 align="center">Development</h2>
+<p align="center">You can explore abstract syntax tree(AST) of mithala matrix <a href="https://bhailang-ast.netlify.app/" target="_blank">here</a>.</p>
+
+
+
+
+
 
 
 

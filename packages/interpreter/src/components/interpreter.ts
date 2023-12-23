@@ -1,4 +1,4 @@
-import parser from "Mithala-Matrix-parser";
+import parser from "mithala-matrix-parser";
 
 import InterpreterModule from "../module/interpreterModule";
 

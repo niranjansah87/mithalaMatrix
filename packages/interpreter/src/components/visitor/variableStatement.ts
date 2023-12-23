@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode } from "Mithala-Matrix-parser";
+import { ASTNode } from "mithala-matrix-parser";
 
 import InvalidStateException from "../../exceptions/invalidStateException";
 import InterpreterModule from "../../module/interpreterModule";
@@ -11,7 +11,7 @@ export default class VariableStatement implements Visitor {
         `variable declarations in variable statement is not present: ${node.declarations}`
       );
 
-    node.declarations.forEach((declaration) => {
+    node.declarations.forEach((declaration: ASTNode) => { // Explicitly type 'declaration' as ASTNode
       InterpreterModule.getVisitor(declaration.type).visitNode(declaration);
     });
   }

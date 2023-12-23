@@ -1,9 +1,11 @@
-#! /usr/bin/env node
-import interpreter from "Mithala-Matrix-interpreter";
-import chalk from "chalk";
+
+import interpreter from "mithala-matrix-interpreter";
+// Remove the duplicate import statement for 'chalk'
+// Remove the duplicate import statement for 'chalk'
 import fs from "fs";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
+import chalk from "chalk";
 
 console.info(
   chalk.hex("#83aaff")(`
@@ -30,13 +32,13 @@ const filePath = yargs(hideBin(process.argv))
     "<filepath>",
     "Interpret the contents of the specified file and print it to stdout",
     () => {},
-    (argv) => {
+    (argv: any) => {
       console.info(argv);
     }
   )
   .demandCommand(1).argv._[0];
 
-fs.readFile(filePath, "utf8", (err, data) => {
+fs.readFile(filePath, "utf8", (err: any, data: any) => {
   if (err) {
     console.error(err);
     return;

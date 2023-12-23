@@ -1,4 +1,4 @@
-import parser, { NodeType } from "Mithala-Matrix-parser";
+import { parser, NodeType } from "/mithala-matrix-parser";
 
 import Interpreter from "../components/interpreter";
 import Scope from "../components/scope";

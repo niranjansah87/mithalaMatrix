@@ -1,8 +1,8 @@
 import Visitor from ".";
-import { ASTNode } from "Mithala-Matrix-parser";
+import { ASTNode } from "mithala-matrix-parser";
 
 import InvalidStateException from "../../exceptions/invalidStateException";
-import NallaPointerException from "../../exceptions/nallaPointerException";
+import NallaPointerException from "../../exceptions/aksharPointerException";
 import RuntimeException from "../../exceptions/runtimeException";
 import { getOperationValue } from "../../helpers";
 import InterpreterModule from "../../module/interpreterModule";

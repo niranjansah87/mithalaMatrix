@@ -1,5 +1,5 @@
 {
-  "name": "mithala-Matrix",
+  "name": "mithala-matrix",
   "version": "0.1.0",
   "description": "CLI for mithalaMatrix",
   "source": "src/index.ts",

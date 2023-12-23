@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode } from "Mithala-Matrix-parser";
+import { ASTNode } from "mithala-matrix-parser";
 
 import RuntimeException from "../../exceptions/runtimeException";
 import InterpreterModule from "../../module/interpreterModule";
@@ -19,7 +19,7 @@ export default class WhileStatement implements Visitor {
       InterpreterModule.getCurrentScope().setLoop(true);
 
 
-      for (let testResult = getConditionValue(), executions = 0; testResult === true || testResult === "sahi"; testResult = getConditionValue(), executions++) {
+      for (let testResult = getConditionValue(), executions = 0; testResult === true || testResult === "ramro"; testResult = getConditionValue(), executions++) {
 
         if (InterpreterModule.getCurrentScope().isBreakStatement()) {
           break;

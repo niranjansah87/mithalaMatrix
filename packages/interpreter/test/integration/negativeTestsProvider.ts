@@ -1,5 +1,5 @@
 import { RuntimeException } from "../../src";
-import NallaPointerException from "../../src/exceptions/nallaPointerException";
+import NallaPointerException from "../../src/exceptions/aksharPointerException";
 
 
 export const NegativeTestCases = [

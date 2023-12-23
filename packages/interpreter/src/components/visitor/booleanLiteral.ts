@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode } from "Mithala-Matrix-parser";
+import { ASTNode } from "mithala-matrix-parser";
 
 export default class BooleanLiteral implements Visitor {
   visitNode(node: ASTNode) {

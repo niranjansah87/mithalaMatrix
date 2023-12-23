@@ -3,10 +3,15 @@ import Interpreter from "../../src/components/interpreter";
 import InterpreterModule from "../../src/module/interpreterModule";
 
 import { NegativeTestCases } from "./negativeTestsProvider";
-import {
-  NoOutputPositiveTests,
-  WithOutputPositiveTests
-} from "./positiveTestsProvider";
+import { expect } from "chai";
+
+
+import { test } from "mocha"; // Import the 'test' function from the 'mocha' package
+
+
+import { NoOutputPositiveTests, WithOutputPositiveTests } from "./positiveTestsProvider";
+
+
 
 
 let interpreter: Interpreter = InterpreterModule.getInterpreter();
@@ -19,21 +24,21 @@ beforeEach(() => {
 
 NoOutputPositiveTests.forEach((testCase) => {
   test(testCase.name, () => {
-    expect(() => interpreter.interpret(testCase.input)).not.toThrowError();
+    expect(() => interpreter.interpret(testCase.input)).to.not.throw();
   });
 });
 
 WithOutputPositiveTests.forEach((testCase) => {
   test(testCase.name, () => {
-    expect(() => interpreter.interpret(testCase.input)).not.toThrowError();
+    expect(() => interpreter.interpret(testCase.input)).to.not.throw();
 
-    expect(console.log).toHaveBeenCalledWith(testCase.output);
+    expect(console.log).to.have.been.calledWith(testCase.output);
   });
 });
 
 NegativeTestCases.forEach((testCase) => {
   test(testCase.name, () => {
-    expect(() => interpreter.interpret(testCase.input)).toThrowError(
+    expect(() => interpreter.interpret(testCase.input)).to.throw(
       testCase.exception
     );
   });
@@ -50,8 +55,8 @@ test("test redeclaring & printing variables in different scopes", () => {
     dekhau a;
     dhanayabad;`)
   ).not.toThrowError();
-  expect(console.log).toHaveBeenCalledWith("90");
-  expect(console.log).toHaveBeenCalledWith("4");
+  expect(console.log).to.have.been.calledWith("90");
+  expect(console.log).to.have.been.calledWith("4");
 });
 
 test("test assigning variable in parent scope", () => {
@@ -64,9 +69,9 @@ test("test assigning variable in parent scope", () => {
     }
     dekhau a;
     dhanayabad;`)
-  ).not.toThrowError();
-  expect(console.log).toHaveBeenCalledWith("90");
-  expect(console.log).toHaveBeenCalledWith("90");
+  ).not.to.throw();
+  expect(console.log).to.have.been.calledWithExactly("90"); // Fix: Change 'to.have.been.calledWith' to 'to.have.been.calledWithExactly'
+  expect(console.log).to.have.been.calledWithExactly("90"); // Fix: Change 'to.have.been.calledWith' to 'to.have.been.calledWithExactly'
 });
 
 test("test accessing variable in parent scope", () => {
@@ -78,7 +83,7 @@ test("test accessing variable in parent scope", () => {
     }
     dekhau a;
     dhanayabad;`)
-  ).not.toThrowError();
+  ).not.toThrow();
   expect(console.log).toHaveBeenCalledWith("4");
   expect(console.log).toHaveBeenCalledWith("4");
 });
@@ -250,6 +255,14 @@ test("if-else ladders one after the other, should be evaluated separately", () =
   expect(console.log).toHaveBeenCalledWith("x > 4");
 });
 
+
+// function expect(_log: (...data: any[]) => void) {
+//   throw new Error("Function not implemented.");
+// }
+
+function beforeEach(_arg0: () => void) {
+  throw new Error("Function not implemented.");
+}
 // test("jest", () => {
 //     interpreter.interpret(`
 //     namaste

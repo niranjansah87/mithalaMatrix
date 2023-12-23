@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode, NodeType } from "Mithala-Matrix-parser";
+import { ASTNode, NodeType } from "mithala-matrix-parser";
 
 import InvalidStateException from "../../exceptions/invalidStateException";
 import InterpreterModule from "../../module/interpreterModule";
