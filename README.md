@@ -11,7 +11,7 @@
 <h2 align="center">Installation</h2>
 
 ```
-npm i -g bhailang
+npm i -g mithalamatrix
 ```
 
 <h2 align="center">Usage</h2>
@@ -20,7 +20,7 @@ npm i -g bhailang
 
 
 <h4 align="left">Edit the file with a text editor.
-You can also try out your code on <a href="https://bhailang.js.org/#playground">Bhai Lang PlayGround</a></h4>
+You can also try out your code on <a href="https://bhailang.js.org/#playground">Mithala Matrix PlayGround</a></h4>
 
 ```
 namaste
