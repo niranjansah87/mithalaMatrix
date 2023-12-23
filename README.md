@@ -16,7 +16,7 @@ npm i -g mithalamatrix
 
 <h2 align="center">Usage</h2>
 
-<h4 align="left">Create a new file (<code>test.bhai</code>)</h4>
+<h4 align="left">Create a new file (<code>test.mm</code>)</h4>
 
 
 <h4 align="left">Edit the file with a text editor.
