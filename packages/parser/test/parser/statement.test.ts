@@ -1,7 +1,7 @@
 import Statement from "../../src/components/parser/statement";
 import BlockStatement from "../../src/components/parser/statement/blockStatement";
 import { TokenTypes } from "../../src/constants/mithalaMatrixSpec";
-import MithalaMatrixModule from "../../src/module/MithalaMatrixModule";
+import MithalaMatrixModule from "../../src/module/mithalaMatrixModule";
 
 jest.mock("../../src/module/bhaiLangModule");
 

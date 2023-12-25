@@ -1,6 +1,6 @@
 import { TokenTypes } from "../../../../../constants/mithalaMatrixSpec";
 import UnsupportedTypeException from "../../../../../exceptions/unsupportedTypeException";
-import BhaiLangModule from "../../../../../module/MithalaMatrixModule";
+import mithalaMatrixModule from "../../../../../module/mithalaMatrixModule";
 import TokenExecutor from "../../../tokenExecutor";
 import { ASTNode } from "../../../types/nodeTypes";
 
@@ -16,16 +16,16 @@ export default abstract class Literal {
   static getLiteralImpl(tokenType?: string): Literal {
     switch (tokenType) {
       case TokenTypes.NUMBER_TYPE:
-        return BhaiLangModule.getNumericLiteral();
+        return mithalaMatrixModule.getNumericLiteral();
 
       case TokenTypes.BOOLEAN_TYPE:
-        return BhaiLangModule.getBooleanLiteral();
+        return mithalaMatrixModule.getBooleanLiteral();
 
       case TokenTypes.STRING_TYPE:
-        return BhaiLangModule.getStringLiteral();
+        return mithalaMatrixModule.getStringLiteral();
 
-      case TokenTypes.NALLA_TYPE:
-        return BhaiLangModule.getNullLiteral();
+      case TokenTypes.AKSHAR:
+        return mithalaMatrixModule.getNullLiteral();
 
       default:
         throw new UnsupportedTypeException(

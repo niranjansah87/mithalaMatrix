@@ -1,0 +1,36 @@
+
+> mithala-matrix-parser@0.0.2 build
+> tsup src/* --dts
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'globby'
+Require stack:
+- C:\MithilaMatrix\packages\parser\node_modules\tsup\dist\chunk-Q2NKY6R2.js
+- C:\MithilaMatrix\packages\parser\node_modules\tsup\dist\chunk-7E5MLYTU.js
+- C:\MithilaMatrix\packages\parser\node_modules\tsup\dist\cli-default.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\MithilaMatrix\packages\parser\node_modules\tsup\dist\chunk-Q2NKY6R2.js:61:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\MithilaMatrix\\packages\\parser\\node_modules\\tsup\\dist\\chunk-Q2NKY6R2.js',
+    'C:\\MithilaMatrix\\packages\\parser\\node_modules\\tsup\\dist\\chunk-7E5MLYTU.js',
+    'C:\\MithilaMatrix\\packages\\parser\\node_modules\\tsup\\dist\\cli-default.js'
+  ]
+}
+
+Node.js v20.10.0
+npm ERR! Lifecycle script `build` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: mithala-matrix-parser@0.0.2 
+npm ERR!   at location: C:\MithilaMatrix\packages\parser 

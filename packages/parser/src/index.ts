@@ -1,4 +1,4 @@
-import MithalaMatrixModule from "./module/MithalaMatrixModule";
+import MithalaMatrixModule from "./module/mithalaMatrixModule";
 
 
 export { NodeType } from "./constants/constants";

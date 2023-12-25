@@ -2,10 +2,13 @@ import TokenizerImpl from "../../src/components/tokenizer";
 import { SPEC } from "../../src/constants/mithalaMatrixSpec";
 import InvalidStateException from "../../src/exceptions/invalidStateException";
 import { TokenTypes } from "../../src/constants/mithalaMatrixSpec";
+import { test } from 'jest';
+// import { Token } from "../../src/components/tokenizer/types";
+import { Token } from "../../src/components/tokenizer/types";
 
 const tokenizer = new TokenizerImpl(SPEC);
 
-test("test Tokenizer.getNextToken with HI_BHAI_TYPE should success", () => {
+test("test Tokenizer.getNextToken with NAMASTE should success", () => {
   tokenizer.initTokenizer(`namaste`);
 
   expect(tokenizer.getNextToken()).toStrictEqual({
@@ -14,7 +17,7 @@ test("test Tokenizer.getNextToken with HI_BHAI_TYPE should success", () => {
   });
 });
 
-test("test Tokenizer.getNextToken with BYE_BHAI_TYPE should success", () => {
+test("test Tokenizer.getNextToken with DHANAYABAD should success", () => {
   tokenizer.initTokenizer(`dhanayabad`);
 
   expect(tokenizer.getNextToken()).toStrictEqual({
@@ -77,3 +80,4 @@ test("test Tokenizer.hasMoreTokens without initTokenizer should success", () => 
 
   expect(tokenizer.hasMoreTokens()).toStrictEqual(false);
 });
+

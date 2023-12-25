@@ -1,5 +1,5 @@
 import { TokenTypes } from "../../constants/mithalaMatrixSpec";
-import MithalaMatrixModule from "../../module/MithalaMatrixModule";
+import MithalaMatrixModule from "../../module/mithalaMatrixModule";
 
 import Statement from "./statement";
 import TokenExecutor from "./tokenExecutor";

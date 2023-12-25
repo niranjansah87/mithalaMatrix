@@ -1,5 +1,5 @@
 import { NodeType } from "../../../../constants/constants";
-import BhaiLangModule from "../../../../module/MithalaMatrixModule";
+import BhaiLangModule from "../../../../module/mithalaMatrixModule";
 import TokenExecutor from "../../tokenExecutor";
 import { ASTNode } from "../../types/nodeTypes";
 

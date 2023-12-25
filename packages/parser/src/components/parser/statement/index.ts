@@ -1,5 +1,5 @@
 import { TokenTypes } from "../../../constants/mithalaMatrixSpec";
-import BhaiLangModule from "../../../module/MithalaMatrixModule";
+import mithalaMatrix from "../../../module/mithalaMatrixModule";
 import { Token } from "../../tokenizer/types";
 import TokenExecutor from "../tokenExecutor";
 import { ASTNode } from "../types/nodeTypes";
@@ -16,32 +16,32 @@ export default abstract class Statement {
 
   static getStatementImpl(lookahead: Token): Statement {
     switch (lookahead.type) {
-      case TokenTypes.BOL_BHAI_TYPE:
-        return BhaiLangModule.getPrintStatement();
+      case TokenTypes.DEKHAU:
+        return mithalaMatrix.getPrintStatement();
 
       case TokenTypes.SEMI_COLON_TYPE:
-        return BhaiLangModule.getEmptyStatement();
+        return mithalaMatrix.getEmptyStatement();
 
       case TokenTypes.OPEN_CURLY_BRACE_TYPE:
-        return BhaiLangModule.getBlockStatement();
+        return mithalaMatrix.getBlockStatement();
 
-      case TokenTypes.BHAI_YE_HAI_TYPE:
-        return BhaiLangModule.getVariableStatement();
+      case TokenTypes.MANNUS:
+        return mithalaMatrix.getVariableStatement();
 
-      case TokenTypes.AGAR_BHAI:
-        return BhaiLangModule.getIfStatement();
+      case TokenTypes.YADI:
+        return mithalaMatrix.getIfStatement();
 
-      case TokenTypes.JAB_TAK_BHAI:
-        return BhaiLangModule.getWhileStatement();
+      case TokenTypes.JABA_SAMMA:
+        return mithalaMatrix.getWhileStatement();
 
-      case TokenTypes.BAS_KAR_BHAI:
-        return BhaiLangModule.getBreakStatement();
+      case TokenTypes.RUKHA:
+        return mithalaMatrix.getBreakStatement();
       
-      case TokenTypes.AGLA_DEKH_BHAI:
-        return BhaiLangModule.getContinueStatement();
+      case TokenTypes.ARKO_HERA:
+        return mithalaMatrix.getContinueStatement();
 
       default:
-        return BhaiLangModule.getExpressionStatement();
+        return mithalaMatrix.getExpressionStatement();
     }
   }
 }
