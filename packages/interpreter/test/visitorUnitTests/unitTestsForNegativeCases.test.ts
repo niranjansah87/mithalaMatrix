@@ -10,8 +10,7 @@ import Program from "../../src/components/visitor/program";
 import VariableDeclaration from "../../src/components/visitor/variableDeclaration";
 import VariableStatement from "../../src/components/visitor/variableStatement";
 import InvalidStateException from "../../src/exceptions/invalidStateException";
-import { test } from 'jest';
-import { expect } from 'chai';
+
 jest.mock("../../src/module/interpreterModule");
 
 const assignmentExpression = new AssignmentExpression();

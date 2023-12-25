@@ -1,4 +1,5 @@
 import RuntimeException from "../exceptions/runtimeException";
+ // Import the 'Map' class from the 'es2015' library
 
 
 export default class Scope {

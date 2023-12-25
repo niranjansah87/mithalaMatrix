@@ -3,10 +3,7 @@ import Interpreter from "../../src/components/interpreter";
 import InterpreterModule from "../../src/module/interpreterModule";
 
 import { NegativeTestCases } from "./negativeTestsProvider";
-import { expect } from "chai";
-
-
-import { test } from "mocha"; // Import the 'test' function from the 'mocha' package
+// Import the 'test' function from the 'mocha' package
 
 
 import { NoOutputPositiveTests, WithOutputPositiveTests } from "./positiveTestsProvider";
@@ -22,27 +19,29 @@ beforeEach(() => {
   jest.clearAllMocks();
 });
 
+
 NoOutputPositiveTests.forEach((testCase) => {
   test(testCase.name, () => {
-    expect(() => interpreter.interpret(testCase.input)).to.not.throw();
+    expect(() => interpreter.interpret(testCase.input)).not.toThrowError();
   });
 });
 
 WithOutputPositiveTests.forEach((testCase) => {
   test(testCase.name, () => {
-    expect(() => interpreter.interpret(testCase.input)).to.not.throw();
+    expect(() => interpreter.interpret(testCase.input)).not.toThrowError();
 
-    expect(console.log).to.have.been.calledWith(testCase.output);
+    expect(console.log).toHaveBeenCalledWith(testCase.output);
   });
 });
 
 NegativeTestCases.forEach((testCase) => {
   test(testCase.name, () => {
-    expect(() => interpreter.interpret(testCase.input)).to.throw(
+    expect(() => interpreter.interpret(testCase.input)).toThrowError(
       testCase.exception
     );
   });
 });
+
 
 test("test redeclaring & printing variables in different scopes", () => {
   expect(() =>
@@ -55,8 +54,8 @@ test("test redeclaring & printing variables in different scopes", () => {
     dekhau a;
     dhanayabad;`)
   ).not.toThrowError();
-  expect(console.log).to.have.been.calledWith("90");
-  expect(console.log).to.have.been.calledWith("4");
+  expect(console.log).toHaveBeenCalledWith("90");
+  expect(console.log).toHaveBeenCalledWith("4");
 });
 
 test("test assigning variable in parent scope", () => {
@@ -69,9 +68,9 @@ test("test assigning variable in parent scope", () => {
     }
     dekhau a;
     dhanayabad;`)
-  ).not.to.throw();
-  expect(console.log).to.have.been.calledWithExactly("90"); // Fix: Change 'to.have.been.calledWith' to 'to.have.been.calledWithExactly'
-  expect(console.log).to.have.been.calledWithExactly("90"); // Fix: Change 'to.have.been.calledWith' to 'to.have.been.calledWithExactly'
+    ).not.toThrowError();
+    expect(console.log).toHaveBeenCalledWith("90");
+    expect(console.log).toHaveBeenCalledWith("90");// Fix: Change 'to.have.been.calledWith' to 'to.have.been.calledWithExactly'
 });
 
 test("test accessing variable in parent scope", () => {

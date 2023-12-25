@@ -1,13 +1,10 @@
 import { RuntimeException } from "../../src";
 import InvalidStateException from "../../src/exceptions/invalidStateException";
-
-import { test ,toThrow} from 'jest';
-import { checkNumberOperands, checkStringOperands, getOperationValue } from "../../src/helpers";
-// import { toStrictEqual } from 'chai';
-import { toStrictEqual } from 'expect';
-
-// import { toThrow } from 'expect';
-
+import {
+  checkNumberOperands,
+  checkStringOperands,
+  getOperationValue
+} from "../../src/helpers";
 
 
 const testCaseProvider = [
@@ -740,7 +737,3 @@ getOperationValueNegTestCasesProvider.forEach((testCase) => {
     );
   });
 });
-function expect(_arg0: () => unknown) {
-  throw new Error("Function not implemented.");
-}
-
