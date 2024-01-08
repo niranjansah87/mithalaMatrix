@@ -1,0 +1,42 @@
+{
+  "name": "mithala-matrix-interpreter",
+  "version": "0.0.1",
+  "description": "Interpreter for Mithala-Matrix",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsup src/* --dts",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niranjansah87/mithalaMatrix.git"
+  },
+  "keywords": [
+    "programming",
+    "language",
+    "mithalaMatrix",
+    "bl",
+    "javascript",
+    "typescript"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niranjansah87/mithalaMatrix/issues"
+  },
+  "homepage": "https://github.com/niranjansah87/mithalaMatrix#readme",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "ts-jest": "^27.1.2",
+    "tsup": "^5.11.11",
+    "jest": "^27.4.5",
+    "@types/jest": "^27.4.0",
+    "config": "*",
+    "tsconfig": "*",
+    "mithala-matrix-parser": "*"
+    
+  }
+}

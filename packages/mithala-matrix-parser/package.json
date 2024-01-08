@@ -1,0 +1,43 @@
+{
+  "name": "mithala-matrix-parser",
+  "version": "0.0.3",
+  "description": "Parser for mithila-Matrix",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsup src/* --dts",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niranjansah87/mithilaMatrix.git"
+  },
+  "keywords": [
+    "programming",
+    "language",
+    "mithala-Matrix",
+    "bl",
+    "javascript",
+    "typescript"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niranjansah87/niranjansah87/issues"
+  },
+  "homepage": "https://github.com/niranjansah87/mithilaMatrix#readme",
+  "devDependencies": {
+    "string-width": "^5.1.0",
+    "ts-node": "^10.4.0",
+    "ts-jest": "^27.1.2",
+    "tsup": "^5.11.11",
+    "jest": "^27.4.5",
+    "@types/jest": "^27.4.0",
+    "config": "*",
+    "tsconfig": "*"
+  }
+}

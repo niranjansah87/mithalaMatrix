@@ -1,0 +1,1 @@
+{"version":3,"file":"client.d.ts","sourceRoot":"","sources":["../../src/performance/client.ts"],"names":[],"mappings":"AAEA,OAAO,EAAa,WAAW,EAAE,kBAAkB,EAAE,MAAM,eAAe,CAAC;AAM3E,aAAK,kBAAkB,GAAG,CAAC,OAAO,EAAE,kBAAkB,KAAK,WAAW,GAAG,SAAS,CAAC;AAUnF;;;;;;;GAOG;AACH,wBAAgB,yBAAyB,CACvC,kBAAkB,EAAE,kBAAkB,EACtC,0BAA0B,GAAE,OAAc,EAC1C,gCAAgC,GAAE,OAAc,GAC/C,IAAI,CA4BN"}

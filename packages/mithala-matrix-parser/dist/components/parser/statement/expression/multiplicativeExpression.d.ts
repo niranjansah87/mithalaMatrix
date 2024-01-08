@@ -1,0 +1,25 @@
+// import Expression from ".";
+
+// import { TokenTypes } from "../../../../constants/mithalaMatrixSpec";
+// import { NodeType } from "../../../../constants/constants";
+// import { ASTNode } from "../../types/nodeTypes";
+
+// export default class MultiplicativeExpression extends Expression {
+//   getExpression(): ASTNode {
+//     return this.getBinaryExpression(
+//       NodeType.PrimaryExpression,
+//       TokenTypes.MULTIPLICATIVE_OPERATOR_TYPE
+//     );
+//   }
+// }
+import Expression from './index';
+import { ASTNode } from '../../types/nodeTypes';
+import '../../../../constants/constants';
+import '../../tokenExecutor';
+import '../../../tokenizer/types';
+
+declare class MultiplicativeExpression extends Expression {
+    getExpression(): ASTNode;
+}
+
+export { MultiplicativeExpression as default };

@@ -1,0 +1,27 @@
+
+> mithala-script-docs@0.0.1 build
+> next build && next export
+
+error - Failed to load next.config.js, see more info here https://nextjs.org/docs/messages/next-config-error
+
+> Build error occurred
+Error: Cannot find module '@sentry/nextjs'
+Require stack:
+- C:\MithilaMatrix\apps\docs\next.config.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at mod._resolveFilename (C:\Users\91800\AppData\Roaming\npm\node_modules\next\dist\build\webpack\require-hook.js:23:32)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\MithilaMatrix\apps\docs\next.config.js:6:30)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\MithilaMatrix\\apps\\docs\\next.config.js' ]
+}
+npm ERR! Lifecycle script `build` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: mithala-script-docs@0.0.1 
+npm ERR!   at location: C:\MithilaMatrix\apps\docs 

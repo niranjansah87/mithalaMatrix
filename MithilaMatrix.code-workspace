@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "docs",
+			"path": "apps/docs"
+		},
+		{
+			"name": "tsconfig",
+			"path": "packages/tsconfig"
+		},
+		{
+			"name": "parser",
+			"path": "packages/parser"
+		},
+		{
+			"name": "config",
+			"path": "packages/config"
+		},
+		{
+			"name": "interpreter",
+			"path": "packages/interpreter"
+		},
+		{
+			"name": "cli",
+			"path": "packages/cli"
+		}
+	],
+	"settings": {
+		"jest.disabledWorkspaceFolders": [
+			"MithilaMatrix",
+			"docs",
+			"tsconfig",
+			"config",
+			"interpreter"
+		]
+	}
+}

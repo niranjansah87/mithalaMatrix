@@ -1,14 +1,14 @@
 {
-  "name": "mithala-matrix",
+  "name": "mithalamatrix",
   "version": "0.1.0",
   "description": "CLI for mithalaMatrix",
   "source": "src/index.ts",
   "main": "bin/index.js",
   "bin": {
-    "mithalaMatrix": "./bin/index.js"
+    "mithalamatrix": "./src/index.ts"
   },
   "files": [
-    "bin"
+    "src"
   ],
   "scripts": {
     "dev": "node --loader ts-node/esm",
