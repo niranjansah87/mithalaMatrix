@@ -3,7 +3,7 @@
   
 
 <p align="center">
-  This is official repository for Mithala Mtrix Developed by Niranjan sah<br><br>
+  This is official repository for Mithala Matrix Developed by Niranjan sah<br><br>
   <b>Mithala Matrix is a fun programming language written in Typescript.It is based on Nepali Language</b>
 </p>
 <br>
